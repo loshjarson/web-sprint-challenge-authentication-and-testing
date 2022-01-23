@@ -30,7 +30,7 @@ Your finished project must include all of the following requirements (further in
 
 - [/] An authentication workflow with functionality for account creation and login, implemented inside `api/auth/auth-router.js`.
 - [/] Middleware used to restrict access to resources from non-authenticated requests, implemented inside `api/middleware/restricted.js`.
-- [ ] A minimum of 2 tests per API endpoint, written inside `api/server.test.js`.
+- [/] A minimum of 2 tests per API endpoint, written inside `api/server.test.js`.
 
 **IMPORTANT Notes:**
 
@@ -44,16 +44,34 @@ Your finished project must include all of the following requirements (further in
 
 ## Submission format
 
-- [ ] Submit via Codegrade by pushing commits to your `main` branch on Github.
-- [ ] Check Codegrade before the deadline to compare its results against your local tests.
-- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
-- [ ] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
+- [/] Submit via Codegrade by pushing commits to your `main` branch on Github.
+- [/] Check Codegrade before the deadline to compare its results against your local tests.
+- [/] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
+- [/] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+
+{
+    sessions: [ "session is saved on server", "sessions dont expire, but can be revoked", "server side can view who is currently logged in"],
+    JSON_web_tokens: ["saved on the client side", "has to be sent every time client contacts server", "easier to scale as tokens dont need to be saved on the server", "tokens cant be revoked, they expire after a specified time instead"]
+}
+
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
+bcryptjs allows us to hash passwords which is in irreversable way to encrypt passwords
+
 3. How are unit tests different from integration and end-to-end testing?
+
+{
+    Integration_testing: ["used to test if app components work well together", "scope is multiple components"],
+    End_to_end_testing: ["used to test how a client interacts with the server", "scope is full-stack"]
+}
+
+
 4. How does _Test Driven Development_ change the way we write applications and tests?
+
+Tests are written before the code, and are written based on how we want the app to work. This allows us to make sure every line of our code works before continuing and leads to higher quality code in theory.
+

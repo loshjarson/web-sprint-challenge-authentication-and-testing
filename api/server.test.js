@@ -1,8 +1,6 @@
 const request = require('supertest')
 const server = require('./server')
 const db = require('../data/dbConfig')
-const bcrypt = require('bcryptjs')
-const jwtDecode = require('jwt-decode')
 
 beforeAll(async () => {
   await db.migrate.rollback()
