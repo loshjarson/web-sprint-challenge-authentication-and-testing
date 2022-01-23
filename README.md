@@ -61,7 +61,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 }
 
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
-bcryptjs allows us to hash passwords which is in irreversable way to encrypt passwords
+bcryptjs allows us to hash passwords which is in irreversable way to encrypt passwords by transforming the password into a hash
 
 3. How are unit tests different from integration and end-to-end testing?
 
