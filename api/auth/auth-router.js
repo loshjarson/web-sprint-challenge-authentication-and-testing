@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const {checkRequestBody} = require("./auth-middleware");
-const authenticate = require("../middleware/restricted");
 const { JWT_SECRET, BCRYPT_ROUNDS } = require("../secrets");
 const Users = require("../users/users-model");
 const jwt = require("jsonwebtoken");
